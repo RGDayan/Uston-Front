@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* Changement de couleur de la nav au dessus de 'md' lorsqu'on scroll */
+    .changeColor{
+        @apply bg-white shadow-sm shadow-orange-400;}
+    .changeColor a {
+        @apply md:text-black;}
+    .changeColor .button{
+        @apply border border-black text-white}
+
+    strong{
+        @apply
+        bg-gradient-to-br
+        from-yellow-500 to-orange-600
+        bg-clip-text
+        text-transparent;
+    }
+}
+
+/* Animation de soulignage de liens (balises <a>) */
+.link-underline{
+    border-bottom-width: 0;
+    background-image: linear-gradient(0.25turn, rgb(255, 147, 46), rgb(255, 255, 0));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;}
+.link-underline:hover{
+    background-size: 100% 2px;
+    background-position: 0 100%;}
