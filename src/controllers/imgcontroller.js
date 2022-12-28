@@ -25,8 +25,10 @@ import settings64 from "../resources/settings/settings64.png";
 import user16 from "../resources/user/user16.png";
 import user32 from "../resources/user/user32.png";
 import user64 from "../resources/user/user64.png";
-
 import user96 from "../resources/user/user96.png";
+import plus_dark16 from "../resources/plus/plus_dark16.png";
+import plus_dark32 from "../resources/plus/plus_dark32.png";
+import plus_dark64 from "../resources/plus/plus_dark64.png";
 
 const images = {
     project16,
@@ -55,7 +57,10 @@ const images = {
     user16,
     user32,
     user64,
-    user96
+    user96,
+    plus_dark16,
+    plus_dark32,
+    plus_dark64
 };
 
 /**

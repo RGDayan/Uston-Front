@@ -9,16 +9,16 @@ export default function CurrentPage(){
             "flex flex-col " +
             "justify-between " +
             "w-full h-full min-h-screen " +
-            "pt-2 " +
             "bg-background text-white " +
             "overflow-auto"}>
             <Routes>
                 <Route path={"/"} element={<IndexProject />} />
-                <Route path={"/index_projet"} element={<IndexProject />} />
-                <Route path={"/index_story"} element={<></>} />
-                <Route path={"/index_suggestion"} element={<></>} />
-                <Route path={"/index_signalement"} element={<></>} />
-                <Route path={"/index_user"} element={<></>} />
+                <Route path={"/index-projects"} element={<IndexProject />} />
+                <Route path={"/index-projects/*"} element={<IndexProject />} />
+                <Route path={"/index-stories"} element={<></>} />
+                <Route path={"/index-suggestions"} element={<></>} />
+                <Route path={"/index-signalement"} element={<></>} />
+                <Route path={"/index-user"} element={<></>} />
                 <Route path={"/configuration"} element={<></>} />
             </Routes>
 

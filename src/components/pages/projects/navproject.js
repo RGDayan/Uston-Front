@@ -1,13 +1,18 @@
 import React from "react";
+import NavBtn from "../../navigation/navbtn";
 
-export default function NavProject(){
-    return (
-        <nav className={
-            "flex flex-col " +
-            "justify-between " +
-            "w-fit min-w-32 h-full " +
-            "shadow-md shadow-cst-darkgray-800"}>
-            test
-        </nav>
-    )
+export default function NavProject({projects}){
+    let list = [];
+    projects.map(
+        function (project) {
+            list.push(
+                <NavBtn
+                    urlNav={"/index-projects/show-project/" + project.id}
+                    imgSrc={"plus_dark"}
+                    alt={"icon_plus"}
+                    text={project.titre}/>
+            )
+        }
+    );
+    return list;
 }
