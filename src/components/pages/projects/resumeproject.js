@@ -19,7 +19,7 @@ export default function ResumeProject(){
 
             <Title text={"Ajouter des catégories"}/>
 
-            <FormCategorie project={project}/>
+            <FormCategorie />
 
         </section>
     )

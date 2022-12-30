@@ -1,9 +1,9 @@
 import React from "react";
 import ChampSaisie from "../miscellaneous/champsaisie";
 
-export default function FormCategorie({ project }){
+export default function FormCategorie(){
     return (
-        <form>
+        <form >
             <ChampSaisie id={"libelle"}
                          label={"Libellé"}
                          value={""}
@@ -13,7 +13,7 @@ export default function FormCategorie({ project }){
                          label={"Code couleur"}
                          value={""}
                          type={"color-picker"}
-                         size={"w-16 h-16"}/>
+                         size={"max-w-32"}/>
         </form>
     )
 }

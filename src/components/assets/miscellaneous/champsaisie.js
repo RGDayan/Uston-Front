@@ -1,18 +1,16 @@
 import React from "react";
 import ColorPicker from "./colorpicker";
+import Input from "./input";
 
 export default function ChampSaisie({id, label, value, type, size}){
     let input = [];
     let classByDefault = "p-1 pl-2 bg-input-txt border-2 border-border rounded-md ";
+    let inputTest = <Input id={id} type={type} value={value} classByDefault={classByDefault} size={size}/>;
 
     switch (type){
         case "text":
             input.push(
-                <input id={"input-"+id}
-                       type={type}
-                       name={id}
-                       defaultValue={value}
-                       className={classByDefault + size}/>
+                inputTest
             );
             break;
         case "textarea":
@@ -25,7 +23,13 @@ export default function ChampSaisie({id, label, value, type, size}){
             break;
         case "color-picker":
             input.push(
-                <ColorPicker />
+                <div className={
+                    "flex flex-row " +
+                    "items-center"
+                }>
+                    {inputTest}
+                    <ColorPicker size={"w-16 h-16 "}/>
+                </div>
             );
             break;
         default:
