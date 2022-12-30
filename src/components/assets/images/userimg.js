@@ -1,5 +1,5 @@
 import React from "react";
-import {GetImgByWindowSize} from "../../controllers/imgcontroller";
+import {GetImgByWindowSize} from "../../../controllers/imgcontroller";
 
 export default function UserImg(){
     let img = GetImgByWindowSize("user", 96);

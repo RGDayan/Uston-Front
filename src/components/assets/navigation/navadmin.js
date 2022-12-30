@@ -7,15 +7,15 @@ export default function NavAdmin(){
             "flex flex-col " +
             "w-fit "}>
             <NavBtn text={"Signalements"}
-                    urlNav={"/index-signalement"}
+                    url={"/index-signalement"}
                     imgSrc={"signalement"}
                     alt={"ico"}/>
             <NavBtn text={"Utilisateurs"}
-                    urlNav={"/index-user"}
+                    url={"/index-user"}
                     imgSrc={"admin_users"}
                     alt={"ico"}/>
             <NavBtn text={"Configuration"}
-                    urlNav={"/configuration"}
+                    url={"/configuration"}
                     imgSrc={"settings"}
                     alt={"ico"}/>
         </div>

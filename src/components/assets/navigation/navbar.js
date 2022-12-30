@@ -7,15 +7,15 @@ export default function NavBar(){
             "flex flex-col " +
             "w-fit "}>
             <NavBtn text={"Projets"}
-                    urlNav={"/index-projects"}
+                    url={"/index-projects"}
                     imgSrc={"project"}
                     alt={"ico"}/>
             <NavBtn text={"Récits utilisateur"}
-                    urlNav={"/index-stories"}
+                    url={"/index-stories"}
                     imgSrc={"user_story"}
                     alt={"ico"}/>
             <NavBtn text={"Suggestions"}
-                    urlNav={"/index-suggestions"}
+                    url={"/index-suggestions"}
                     imgSrc={"suggestion_dark"}
                     alt={"ico"}/>
         </div>

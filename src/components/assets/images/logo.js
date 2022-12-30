@@ -1,5 +1,5 @@
 import React from "react";
-import {GetImgByWindowSize} from "../../controllers/imgcontroller";
+import {GetImgByWindowSize} from "../../../controllers/imgcontroller";
 import {Link} from "react-router-dom";
 
 export default function Logo(){

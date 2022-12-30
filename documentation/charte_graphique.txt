@@ -1,4 +1,3 @@
-Couleurs Uston :
 Background : #0F0F0F
 Boutons / footer background : #272727/ #222222
 Boutons Hover : #3D3D3D

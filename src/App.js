@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import LateralPanel from "./components/navigation/lateralPanel";
+import LateralPanel from "./components/assets/navigation/lateralPanel";
 import CurrentPage from "./components/pages/currentpage";
 
 /**
