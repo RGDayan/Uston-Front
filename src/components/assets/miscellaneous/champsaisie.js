@@ -32,6 +32,17 @@ export default function ChampSaisie({id, label, value, type, size}){
                 </div>
             );
             break;
+        case "submit":
+            input.push(
+                <input id={id}
+                       type={"submit"}
+                       value={value}
+                       className={
+                           "px-4 py-2 " +
+                           "bg-cst-darkgray-700 hover:bg-btn-hover active:bg-cst-darkgray-800 " +
+                           "rounded-md"}/>
+            )
+            break;
         default:
             break;
     }

@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import BriqueProject from "./projects/briqueproject";
 import ShowProject from "./projects/showproject";
 import ResumeProject from "./projects/resumeproject";
+import CreateProject from "./projects/createproject";
 
 export default function CurrentPage(){
     return (
@@ -18,7 +19,7 @@ export default function CurrentPage(){
                 <Route path={"/"} element={<BriqueProject />} />
                 <Route path={"/index-projects/*"} element={<BriqueProject />} />
                 <Route path={"/index-projects"} element={<BriqueProject />} >
-                    <Route path={"/index-projects/create-project"} element={<></>} />
+                    <Route path={"/index-projects/create-project"} element={<CreateProject />} />
                     <Route path={"/index-projects/show-project/:id"} element={<ShowProject />}>
                         <Route path={"/index-projects/show-project/:id/resume"} element={<ResumeProject />} />
                         <Route path={"/index-projects/show-project/:id/user-stories"} element={<></>} />

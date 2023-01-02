@@ -11,11 +11,12 @@ export default function NavBtn({text, url, imgSrc, alt}){
                  className={({ isActive }) => {
                      return (
                          "flex flex-row " +
-                        "items-center " +
-                        "p-5 pl-4 text-white " +
-                        (isActive
-                            ? "bg-btn-hover "
-                            : "hover:bg-btn-hover")
+                         "items-center " +
+                         "p-5 pl-4 text-white " +
+                         "active:bg-cst-darkgray-700 " +
+                         (isActive
+                             ? "bg-btn-hover "
+                             : "hover:bg-btn-hover")
                     )}}>
             <div className={"mr-5 min-w-fit"}>
                 <img src={img} alt={alt}/>

@@ -7,9 +7,9 @@ export default function IndexProject({projects}){
         function (project) {
             list.push(
                 <NavBtn
-                    url={"/index-projects/show-project/" + project.id}
-                    imgSrc={"plus_dark"}
-                    alt={"icon_plus"}
+                    url={"/index-projects/show-project/" + project.id + "/resume"}
+                    imgSrc={""}
+                    alt={""}
                     text={project.titre}/>
             )
             return null;

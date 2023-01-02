@@ -6,7 +6,7 @@ export default function ColorPicker({size}){
     const [colorControllerState, setColorControllerState] = useState(ColorController());
     colorControllerState.initColor();
 
-    function OpenColorPicker(){
+    function openColorPicker(){
         let picker = document.getElementById("color-picker");
         picker.classList.toggle("hidden");
     }
@@ -14,12 +14,12 @@ export default function ColorPicker({size}){
     function handleChangeColor(color, variant) {
         setColorControllerState(() => {
             colorControllerState.selectColor(color, variant);
+            console.log(colorControllerState.currentColor)
             return {
                 ...colorControllerState
             }
         })
     }
-
 
     const colors = colorControllerState.colors.map((color) => {
         return (
@@ -45,7 +45,7 @@ export default function ColorPicker({size}){
                      "shadow-lg " +
                      "shadow-red-700 " +
                      "cursor-pointer "}
-                 onClick={OpenColorPicker}>
+                 onClick={openColorPicker}>
 
                 <div id={"color-picker"}
                      className={"hidden absolute"}>

@@ -1,6 +1,6 @@
 import React from "react";
 import NavBtn from "../../assets/navigation/navbtn";
-import HorizontalSeparator from "../../assets/miscellaneous/separator";
+import HorizontalSeparator from "../../assets/miscellaneous/horizontalseparator";
 import {Outlet} from "react-router-dom";
 import IndexProject from "../../assets/navigation/indexproject";
 
@@ -47,7 +47,7 @@ export default function BriqueProject(){
             "overflow-x-hidden"}>
             <nav className={
                 "flex flex-col " +
-                "w-fit min-w-32 h-full " +
+                "w-fit min-w-52 h-full " +
                 "shadow-md shadow-cst-darkgray-800"}>
 
                 <NavBtn url={"/index-projects/create-project"}

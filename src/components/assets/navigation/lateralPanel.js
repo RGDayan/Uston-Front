@@ -3,7 +3,7 @@ import NavBar from "./navbar";
 import Logo from "../images/logo";
 import NavAdmin from "./navadmin";
 import UserImg from "../images/userimg";
-import HorizontalSeparator from "../miscellaneous/separator";
+import HorizontalSeparator from "../miscellaneous/horizontalseparator";
 
 export default function LateralPanel(){
     return (

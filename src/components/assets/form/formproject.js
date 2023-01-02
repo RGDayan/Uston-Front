@@ -1,12 +1,22 @@
 import React from "react";
 import ChampSaisie from "../miscellaneous/champsaisie";
 
-export default function FormProject({project}){
+export default function FormProject({project, mode}){
+    let inputSubmit = [];
+
+    if (mode.match("create")){
+        inputSubmit.push(
+            <ChampSaisie id={"validate-project"}
+                         type={"submit"}
+                         value={"Ajouter"} />
+        )
+    }
+
     return (
         <form className={
             "flex flex-col " +
             "w-full " +
-            "m-5"}>
+            "m-5"} >
             <ChampSaisie id={"title"}
                          label={"Titre"}
                          value={project.titre}
@@ -32,6 +42,8 @@ export default function FormProject({project}){
                          value={project.description}
                          type={"textarea"}
                          size={"min-w-96 min-h-32 w-2/3"}/>
+            {inputSubmit}
+
         </form>
     )
 }

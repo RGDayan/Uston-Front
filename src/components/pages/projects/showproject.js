@@ -2,6 +2,7 @@ import React from "react";
 import {Outlet, useOutletContext, useParams} from "react-router-dom";
 import GetImgByFormat from "../../../controllers/imgcontroller";
 import NavProject from "../../assets/navigation/navproject";
+import BtnDelete from "../../assets/miscellaneous/btndelete";
 
 export default function ShowProject(){
     const projects = useOutletContext();
@@ -13,7 +14,11 @@ export default function ShowProject(){
     if (project != null){
         return (
             <section className={"w-full"}>
-                <NavProject project={project}/>
+                <div className={"flex "}>
+                    <NavProject project={project}/>
+                    <BtnDelete id={"project"}
+                               object={project}/>
+                </div>
                 <Outlet context={project}/>
             </section>
         )
