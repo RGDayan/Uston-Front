@@ -12,13 +12,13 @@ export default function NavBtn({text, url, imgSrc, alt}){
                      return (
                          "flex flex-row " +
                          "items-center " +
-                         "p-5 pl-4 text-white " +
+                         "p-3 pl-5 text-white " +
                          "active:bg-cst-darkgray-700 " +
                          (isActive
                              ? "bg-btn-hover "
                              : "hover:bg-btn-hover")
                     )}}>
-            <div className={"mr-5 min-w-fit"}>
+            <div className={"mr-3 min-w-fit"}>
                 <img src={img} alt={alt}/>
             </div>
             <p>
